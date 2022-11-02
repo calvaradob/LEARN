@@ -3,7 +3,7 @@ class Usuario {
       this.nombre = nombre
       this.apellido = apellido
       this.libros = libros
-      this.mascotas = mascotas
+      this.mascotas = []
       
     }
     getFullName () {
@@ -11,19 +11,19 @@ class Usuario {
            
     }
 
-    AddMascotas () {
-        let mascotas = [perro, gato]
-        console.log(mascotas)
+    AddMascotas (masc) {
+        this.mascotas.push(masc);
+        
     }
-
-    //addMascota () {}
-//countMascotas () {}
-//addBook () {}
-//getBookNames () {}
 
 }
 
-let objeto1 = new Usuario ('Andrea', 'Alvarado')
+const objeto1 = new Usuario ('Andrea', 'Alvarado')
+console.log(objeto1)
+
+objeto1.AddMascotas("Perro")
+objeto1.AddMascotas("Gato")
+
 console.log(objeto1)
 
 
