@@ -1,30 +1,30 @@
 class Usuario {
-    constructor (nombre, apellido) {
+    constructor (nombre, apellido, libros, mascotas) {
       this.nombre = nombre
       this.apellido = apellido
+      this.libros = libros
+      this.mascotas = mascotas
+      
+    }
+    getFullName () {
+        return `Hola mi nombre es ${this.nombre} y mi apellido es ${this.apellido}`;
+           
     }
 
-  
-    static saludoCorto = 'Hola'
-  
-    saludo () {
-      console.log(`Hola! Soy ${this.nombre} y tengo ${this.edad} años`)
+    AddMascotas () {
+        let mascotas = [perro, gato]
+        console.log(mascotas)
     }
-  
-    static saludoEstatico () {
-      console.log('Hola, como estas?')
-    }
-  }
-  
-  const iram = new Persona('Iram', 33)
-  const carlos = new Persona('Carlos', 34)
-  
-  console.log(iram)
-  console.log(iram.nombre)
-  iram.saludo()
-  
-  carlos.saludo()
-  
-  console.log(Persona.saludoCorto)
-  
-  Persona.saludoEstatico()
+
+    //addMascota () {}
+//countMascotas () {}
+//addBook () {}
+//getBookNames () {}
+
+}
+
+let objeto1 = new Usuario ('Andrea', 'Alvarado')
+console.log(objeto1)
+
+
+
